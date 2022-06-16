@@ -135,8 +135,10 @@
         var myPix = new Array("assets/seed0742.png","assets/seed0642.png","assets/seed0943.png");
         
         function choosePic {
-             var randomNum = Math.floor(Math.random() * myPix.length);
-             return document.getElementById("myPicture").src = myPix[randomNum];
+            var myPix = new Array("assets/seed0742.png","assets/seed0642.png","assets/seed0943.png"); 
+            var randomNum = Math.floor(Math.random() * myPix.length);
+            return document.getElementById("myPicture").src = myPix[randomNum];
+        }
         </script>
         <script src="js/scripts.js"></script>
       </main>
