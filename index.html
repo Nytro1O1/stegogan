@@ -44,9 +44,8 @@
                             </div>
                         </div>
 
-                  <img id="myPicture" src="assets/stego.png" height = "256" width = "256" alt="stego_picture" align="center"> </div>
-                  <!--<span img id="myPicture" align="center"> -->
-                  <img src="assets/seed0742.png" height = "256" width = "256" alt="stego_picture" align="center"> </div> 
+                  <img src="assets/stego.png" height = "256" width = "256" alt="stego_picture" align="center"> </div>
+                  <span img id="myPicture" align="center">               
                     </span>
                 </div>
             </header>
@@ -138,7 +137,8 @@
         function choosePic {
             var myPix = new Array("assets/seed0742.png","assets/seed0642.png","assets/seed0943.png"); 
             var randomNum = Math.floor(Math.random() * myPix.length);
-            return document.getElementById("myPicture").src = myPix[randomNum];
+          <!--  return document.getElementById("myPicture").src = myPix[randomNum]; -->
+            return document.getElementById("myPicture").src = "assets/seed0742.png";
         }
         </script>
         <script src="js/scripts.js"></script>
