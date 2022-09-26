@@ -133,24 +133,25 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script type="text/javascript">
+           /**
         const xhr = new XMLHttpRequest();
-        const url = "https://api.github.com/repos/Nytro1O1/stegogan/contents/assets"
+        const url = "https://api.github.com/repos/Nytro1O1/stegogan/contents/assets/"
     // Replace -username- with your GitHub username, -repo- with the repository name, and then :path with a path to the file or folder you want to get the content of (leave blank to ge all files of the repository)
 
-        xhr.open('GET', URL, true);
+        xhr.open('GET', url, true);
 
         xhr.onload = function() {
-            const data = JSON.parse(this.response);
+            public const data = JSON.parse(this.response);
 
             console.log(data);
-        };
+        }; 
     
-        xhr.send();
+        xhr.send();**/
         function changeImage() {
-            //var myPix = new Array("assets/seed0742.png","assets/seed0642.png","assets/seed0943.png");
-            var randomNum = Math.floor(Math.random() * data.length);
-            document.getElementById("img").innerHTML = data[randomNum];
-            //return document.getElementById("img").src=myPix[randomNum];
+            var myPix = new Array("assets/seed0742.png","assets/seed0642.png","assets/seed0943.png, assets/seed0007.png, assets/seed0012.png, assets/seed0060.png, assets/seed0061.png, assets/seed0082.png, assets/seed0087.png, assets/seed0089.png, assets/seed0102.png, assets/seed0183.png, assets/seed0290.png, assets/seed0293.png, v, assets/seed0344.png, assets/seed0411.png, assets/seed0611.png, assets/seed0642.png, assets/seed0673.png, assets/seed0698.png");
+            var randomNum = Math.floor(Math.random() * myPix.length);
+            //document.getElementById("img").innerHTML = data[randomNum];
+            document.getElementById("img").src=myPix[randomNum];
             }
         </script>
         <script src="js/scripts.js"></script>
